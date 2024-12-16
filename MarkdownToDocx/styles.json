@@ -1,0 +1,22 @@
+{
+  "styles": [
+    {
+      "styleId": "Heading1",
+      "styleName": "Heading 1",
+      "fontBold": true,
+      "justification": "center"
+    },
+    {
+      "styleId": "Heading2",
+      "styleName": "Heading 2",
+      "fontItalic": true,
+      "justification": "left"
+    },
+    {
+      "styleId": "Heading3",
+      "styleName": "Heading 3",
+      "fontUnderline": true,
+      "justification": "right"
+    }
+  ]
+}

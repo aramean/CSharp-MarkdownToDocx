@@ -1,0 +1,15 @@
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/bin/Debug/net8.0/MarkdownToDocx
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/bin/Debug/net8.0/MarkdownToDocx.deps.json
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/bin/Debug/net8.0/MarkdownToDocx.runtimeconfig.json
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/bin/Debug/net8.0/MarkdownToDocx.dll
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/bin/Debug/net8.0/MarkdownToDocx.pdb
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/obj/Debug/net8.0/MarkdownToDocx.GeneratedMSBuildEditorConfig.editorconfig
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/obj/Debug/net8.0/MarkdownToDocx.AssemblyInfoInputs.cache
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/obj/Debug/net8.0/MarkdownToDocx.AssemblyInfo.cs
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/obj/Debug/net8.0/MarkdownToDocx.csproj.CoreCompileInputs.cache
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/obj/Debug/net8.0/MarkdownToDocx.dll
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/obj/Debug/net8.0/refint/MarkdownToDocx.dll
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/obj/Debug/net8.0/MarkdownToDocx.pdb
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/obj/Debug/net8.0/MarkdownToDocx.genruntimeconfig.cache
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/obj/Debug/net8.0/ref/MarkdownToDocx.dll
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/obj/Debug/net8.0/MarkdownToDocx.csproj.AssemblyReference.cache
