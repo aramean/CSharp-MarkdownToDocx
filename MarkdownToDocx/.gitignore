@@ -1,0 +1,44 @@
+# Ignore build output
+/bin/
+/obj/
+
+# Ignore Visual Studio temporary files, folders, and files
+.vs/
+/.vscode/
+/.idea/
+/.vs2019/
+.vs2017/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Ignore generated files
+*.log
+*.dmp
+*.bak
+*.swp
+
+# Ignore packages folder
+/packages/
+
+# Ignore NuGet files
+*.nupkg
+*.snupkg
+.nuget/
+
+# Ignore project settings folder (VS)
+.vscode/
+
+# Ignore OpenXML generated files if any
+*.docx
+*.docm
+*.xlsx
+*.pptx
+
+# Ignore build configuration files
+*.xproj
+*.csproj.user
+*.csproj.lock

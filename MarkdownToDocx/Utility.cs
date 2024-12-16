@@ -42,6 +42,15 @@ namespace Utility
                     {
                         AddHeaderToDocx(body, line.Substring(4), "Heading3");  // Standard H3 style
                     }
+                    else if (line.StartsWith("#### "))
+                    {
+                        AddHeaderToDocx(body, line.Substring(5), "Heading4");  // Standard H4 style
+                    }
+                    else
+                    {
+                        // For other lines, apply a generic Heading style
+                        AddHeaderToDocx(body, line, "Generic Heading");  // Generic Heading style (not linked to markdown level)
+                    }
                 }
             }
         }
@@ -53,7 +62,8 @@ namespace Utility
                 CreateHeadingStyle("Heading1", "Heading 1", JustificationValues.Left, true, false, false, 18),  // 18 pt font size
                 CreateHeadingStyle("Heading2", "Heading 2", JustificationValues.Left, false, true, false, 16), // 16 pt font size
                 CreateHeadingStyle("Heading3", "Heading 3", JustificationValues.Left, false, false, true, 14), // 14 pt font size
-                CreateHeadingStyle("Heading4", "Heading 4", JustificationValues.Left, false, false, false, 12) // 12 pt font size
+                CreateHeadingStyle("Heading4", "Heading 4", JustificationValues.Left, false, false, false, 12), // 12 pt font size
+                CreateHeadingStyle("Generic Heading", "Generic Heading", JustificationValues.Left, false, false, false, 12) // Generic Heading style
             );
         }
 
@@ -98,7 +108,7 @@ namespace Utility
             // Create a paragraph to hold the header
             Paragraph paragraph = new Paragraph();
 
-            // Define the style based on the style ID (Heading1, Heading2, Heading3)
+            // Define the style based on the style ID (Heading1, Heading2, Heading3, Heading4)
             ParagraphProperties paraProps = new ParagraphProperties();
             paraProps.Append(new ParagraphStyleId() { Val = styleId });  // Apply the style using the ID
 
