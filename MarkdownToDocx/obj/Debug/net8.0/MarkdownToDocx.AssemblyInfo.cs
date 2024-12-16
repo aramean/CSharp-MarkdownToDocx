@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MarkdownToDocx")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab53eaf8a61cef8047a74c7373dbe5dc1e3d736b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MarkdownToDocx")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MarkdownToDocx")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

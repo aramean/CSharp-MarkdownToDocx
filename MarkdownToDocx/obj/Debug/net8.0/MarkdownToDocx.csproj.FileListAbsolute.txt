@@ -18,3 +18,4 @@
 /Users/josef/Code-Consid/cv-test/MarkdownToDocx/MarkdownToDocx/obj/Debug/net8.0/MarkdownToDocx.genruntimeconfig.cache
 /Users/josef/Code-Consid/cv-test/MarkdownToDocx/MarkdownToDocx/obj/Debug/net8.0/ref/MarkdownToDocx.dll
 /Users/josef/Code-Consid/cv-test/MarkdownToDocx/MarkdownToDocx/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/josef/Code-Consid/cv-test/MarkdownToDocx/MarkdownToDocx/obj/Debug/net8.0/MarkdownToDocx.sourcelink.json

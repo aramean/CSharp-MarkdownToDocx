@@ -46,43 +46,44 @@ namespace Utility
             }
         }
 
-        // Add standard heading styles (Heading 1, Heading 2, Heading 3) to the style definitions
+        // Add standard heading styles (Heading 1, Heading 2, Heading 3, Heading 4) to the style definitions
         private static void AddStandardHeadingStyles(Styles styles)
         {
             styles.Append(
-                new Style()
-                {
-                    Type = StyleValues.Paragraph,
-                    StyleId = "Heading1",  // Standard built-in style for Heading 1
-                    StyleName = new StyleName() { Val = "Heading 1" },  // Localizable name, but it's safe in this context
-                    BasedOn = new BasedOn() { Val = "Normal" },
-                    NextParagraphStyle = new NextParagraphStyle() { Val = "Normal" },
-                    StyleParagraphProperties = new StyleParagraphProperties(
-                        new Justification() { Val = JustificationValues.Center }
-                    ),
-                    StyleRunProperties = new StyleRunProperties(new Bold())
-                },
-                new Style()
-                {
-                    Type = StyleValues.Paragraph,
-                    StyleId = "Heading2",  // Standard built-in style for Heading 2
-                    StyleName = new StyleName() { Val = "Heading 2" },  // Localizable name, but it's safe in this context
-                    BasedOn = new BasedOn() { Val = "Normal" },
-                    NextParagraphStyle = new NextParagraphStyle() { Val = "Normal" },
-                    StyleParagraphProperties = new StyleParagraphProperties(),
-                    StyleRunProperties = new StyleRunProperties(new Italic())
-                },
-                new Style()
-                {
-                    Type = StyleValues.Paragraph,
-                    StyleId = "Heading3",  // Standard built-in style for Heading 3
-                    StyleName = new StyleName() { Val = "Heading 3" },  // Localizable name, but it's safe in this context
-                    BasedOn = new BasedOn() { Val = "Normal" },
-                    NextParagraphStyle = new NextParagraphStyle() { Val = "Normal" },
-                    StyleParagraphProperties = new StyleParagraphProperties(),
-                    StyleRunProperties = new StyleRunProperties(new Underline() { Val = UnderlineValues.Single })
-                }
+                CreateHeadingStyle("Heading1", "Heading 1", JustificationValues.Left, true, false, false, 18),  // 18 pt font size
+                CreateHeadingStyle("Heading2", "Heading 2", JustificationValues.Left, false, true, false, 16), // 16 pt font size
+                CreateHeadingStyle("Heading3", "Heading 3", JustificationValues.Left, false, false, true, 14), // 14 pt font size
+                CreateHeadingStyle("Heading4", "Heading 4", JustificationValues.Left, false, false, false, 12) // 12 pt font size
             );
+        }
+
+        // Helper method to create a heading style
+        private static Style CreateHeadingStyle(string styleId, string styleName, JustificationValues justification, bool bold, bool italic, bool underline, int fontSize)
+        {
+            // Create RunProperties based on passed boolean values
+            var runProperties = new RunProperties();
+            
+            if (bold)
+                runProperties.Append(new Bold());
+            
+            if (italic)
+                runProperties.Append(new Italic());
+            
+            if (underline)
+                runProperties.Append(new Underline() { Val = UnderlineValues.Single });
+
+            runProperties.Append(new FontSize() { Val = (fontSize * 2).ToString() });  // Multiply by 2 for OpenXML (half-points)
+
+            return new Style()
+            {
+                Type = StyleValues.Paragraph,
+                StyleId = styleId,
+                StyleName = new StyleName() { Val = styleName },
+                BasedOn = new BasedOn() { Val = "Normal" },
+                NextParagraphStyle = new NextParagraphStyle() { Val = "Normal" },
+                StyleParagraphProperties = new StyleParagraphProperties(new Justification() { Val = justification }),
+                StyleRunProperties = new StyleRunProperties(runProperties)
+            };
         }
 
         // Method to add headers to the document
